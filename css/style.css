@@ -1,0 +1,684 @@
+*:focus {
+outline: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 150%;
+  background: #000000;
+}
+p, 
+ul, 
+li {
+  margin: 0;
+}
+
+/*========================================
+  リンク
+========================================*/
+a {
+  color: #ffffff;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*========================================
+  ボタン
+========================================*/
+.movie-btn-wrap {
+  display: inline-block;
+}
+.form-btn {
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 3px;
+}
+.btn-blue {
+  background: #00a1e9;
+}
+
+/*========================================
+  テキスト
+========================================*/
+.page-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.txtl {
+  font-size: 28px;
+  text-align: center;
+  margin: 40px auto;
+}
+.txtm {
+  font-size: 20px;
+}
+.txts {
+  font-size: 16px;
+}
+
+/*========================================
+  アイコン
+========================================*/
+.fa-star {
+  color: #fff352;
+}
+.fa-heart {
+  color: #e4007f;
+}
+.fa-comment {
+  color: #00a1e9;
+}
+
+/*========================================
+  レイアウト
+========================================*/
+.site-width {
+  width: 980px;
+  padding: 40px 0;
+  margin: 0 auto;
+  background: #303030;
+  color: #f1f1f1;
+}
+
+/*========================================
+  ヘッダー
+========================================*/
+header {
+  background: #000000;
+  border-bottom: 2px solid #3f3f3f;
+}
+.header-width {
+  width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.blue {
+  color: #00a1e9;
+}
+.nav-list {
+  display: flex;
+  margin: 0;
+  margin-top: 5px;
+}
+.nav-contents {
+  list-style: none;
+  margin-left: 10px;
+  background: #404040;
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.nav-contents:hover {
+	transform: scale(1.05);	/*画像の拡大率*/
+  background: #505050;
+  cursor: pointer;
+}
+
+/*========================================
+  トップページ
+========================================*/
+.panel-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.panel {
+  color: #f1f1f1;
+  background: #404040;
+  border: 2px solid #101010;
+  text-align: center;
+  width: calc(20% - 15px);
+  padding: 15px 10px;
+  margin-bottom: 15px;
+} 
+.panel-mypage-clip {
+  width: 100%;
+}
+.panel:hover {
+  background: #505050;
+}
+.panel-img {
+  width: 150px;
+  margin-bottom: 10px;
+  transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.panel-img:hover {
+	transform: scale(1.05);	/*画像の拡大率*/
+}
+
+.panel-body-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.panel-body {
+  overflow: hidden;
+}
+
+.panel-body i {
+  display: block;
+}
+
+.score {
+  font-size: 14px;
+}
+
+/*========================================
+  映画詳細ページ
+========================================*/
+.movieData {
+  text-align: center;
+}
+.movie-wraps{
+  display: flex;
+  margin: 40px auto;
+}
+.review-top-wrap {
+  margin: 100px 30px 0;
+}
+.movie-left{
+  width: 40%;
+  text-align: center;
+}
+.movie-left img{
+  background: #404040;
+  border: 2px solid #101010;
+  padding: 10px;
+  width: 220px;
+  cursor: zoom-in;
+}
+.movie-right{
+  width: 60%;
+}
+.explanation{
+  margin: 80px 30px 40px;
+  padding: 0 20px;
+  border: 2px solid #101010;
+  background-color:rgba(255,255,255,0.1);
+  min-height: 300px;
+}
+.explanation h3{
+  display: inline-block;
+  background: #101010;
+  margin: 0 ;
+  padding: 10px;
+  position: relative;
+  top: -30px;
+}
+.nav-items {
+  margin-right: 10px;
+  background: #00a1e9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.nav-items .fas {
+  color: #fff;
+  margin-right: 5px;
+}
+/*お気に入りアイコン*/
+.icn-like{ 
+  color: #ddd;
+}
+.icn-like:hover{
+  cursor: pointer;
+}
+.icn-like.active{
+  background: #fe8a8b;
+}
+.movieInfo-btn-wrap{
+  margin-top: 10px;
+}
+.btn-review, .btn-like {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn-like {
+  background: #00a1e9;
+}
+.btn-like:hover {
+  cursor: pointer;
+}
+.btn-like.active {
+  background: #fe8a8b;
+}
+.btn-review {
+  background: #00a1e9;
+}
+
+/*========================================
+  レビュートップページ
+========================================*/
+.review-panel {
+  width: 70%;
+  margin: 0 auto 15px;
+}
+.review-panel:hover {
+  background: #404040;
+}
+.panel-top {
+  display: flex;
+}
+.panel-top-left-right {
+  margin-left: 10px;
+  text-align: left;
+}
+.panel-top-right {
+  margin-left: 10px;
+}
+.panel-movie-img {
+  width: 80px;
+  height: 120px;
+}
+.panel-movie-img:hover {
+  cursor: pointer;
+}
+.panel-thumbnail {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.panel-title {
+  font-size: 20px;
+}
+.panel-date {
+  color: #909090;
+  text-align: left;
+}
+.panel-score {
+  font-size: 26px;
+  text-align: left;
+}
+.panel-comment {
+  text-align: left;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.panel-top-movie:hover {
+  opacity: 0.6;
+}
+/*ページネーション*/
+.pagination-list {
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+.list-item {
+  background: #505050;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+.list-item:hover {
+  background: #707070;
+  cursor: pointer;
+}
+.list-item.active {
+  background: #303030;
+}
+
+/*========================================
+  レビュー（投稿画面）
+========================================*/
+.review-right {
+  width: 500px;
+}
+.review-counter {
+  margin-bottom: 10px;
+}
+
+/*========================================
+  スライダー
+========================================*/
+.slider-score {
+  height: 120px;
+  margin-bottom: 20px;
+}
+.value {
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+input[type="range"] {
+  display: block;
+  -webkit-appearance: none;
+  background-color: #bdc3c7;
+  width: 350px;
+  height: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  outline: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #00a1e9;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}​
+input[type="range"]::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: 2px solid #00a1e9;
+}
+
+/*========================================
+  マイページ（プロフィール）
+========================================*/
+.mypage {
+  display: flex;
+  margin: 0 auto;
+}
+.profile-wrap {
+  width: 768px;
+  padding: 0 20px;
+  display: flex;
+}
+.profile-left {
+  width: 200px;
+  text-align: center;
+}
+.profile-left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #fff;
+}
+.profile-right {
+  width: 568px;
+}
+.profile-right input[type="text"] {
+  font-size: 16px;
+  width: 350px;
+}
+.profile-name, .profile-id {
+  margin: 0;
+}
+.profile-name {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.profile-text {
+  min-height: 120px;
+  margin-bottom: 10px;
+  margin: 0;
+}
+.profile-right textarea{
+  margin-bottom: 15px;
+  white-space: pre-line;
+}
+.profile-right textarea p {
+  white-space: pre-line;
+}
+.text-wrap {
+  display: flex;
+  margin-top: 10px;
+  float: right;
+}
+.text-review {
+  color: #00a1e9;
+}
+.text-review:hover {
+  cursor: pointer;
+  color: #00B1E9;
+}
+.delete {
+  margin-left: 10px;
+}
+
+/*========================================
+  マイページ（下部）
+========================================*/
+.pagenation-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.mypage-tab {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.nav-link {
+  background: #00a1e9;
+  border: 1px solid #00a1e9;
+  margin-right: 5px;
+}
+.nav-link:hover {
+  background: #00B1E9;
+  border: 1px solid #00B1E9;
+}
+.red {
+  color: red;
+  margin-left: 5px;
+}
+
+/*========================================
+  アカウント情報
+========================================*/
+.account-wrap {
+  width: 768px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.account-wrap:last-child {
+  margin-bottom: 0;
+}
+.account-btn {
+  width: 500px;
+  margin: 0 auto;
+  background: #505050;
+  font-size: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.account-btn p{
+  margin: 0;
+}
+.account-btn:hover {
+  cursor: pointer;
+  background: #606060;
+}
+
+/*========================================
+  サイドバー
+========================================*/
+.sidebar {
+  background: #505050;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.sidebar li {
+  padding: 5px 20px;
+}
+.sidebar li:hover {
+  background: #707070;
+}
+
+/*========================================
+  プロフィール編集
+========================================*/
+.counter {
+  display: block;
+  float: right;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+}
+.select-box {
+  position: relative;
+}
+.select-box::after {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  display: block;
+  border-top: 10px solid #333;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 7px solid transparent;
+  content: "";
+}
+.imgDrop {
+  display: inline-block;
+  margin-top: 30px;
+}
+.area-drop{
+  margin-top: 5px;
+  width: 150px;
+  height: 150px;
+  font-size: 50px;
+  line-height: 150px;
+  background: #f6f5f4;
+  color: #ccc;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.input-file{
+  opacity:0;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.prev-img{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*========================================
+  フォーム
+========================================*/
+.form{
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid #505050;
+  color: #f1f1f1;
+  overflow: hidden;
+}
+.h3Title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+input[type="text"],input[type="password"]{
+  border: 1px solid #000000;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+}
+input[type="text"]:hover,input[type="password"]:hover{
+  cursor: pointer;
+}
+textarea {
+  padding: 10px;
+  white-space: pre-line;
+}
+textarea p {
+  white-space: pre-line;
+}
+label{
+  display: block;
+  margin-bottom: 15px;
+}
+label:last-child {
+  margin-bottom: 0;
+}
+.submit-wrap {
+  text-align: right;
+  clear: both;
+}
+.submit-wrap-login {
+  display: flex;
+  justify-content: space-between;
+}
+.submit-wrap a{
+  display: inline-block;
+  color: #00a1e9;
+  margin-top: 10px;
+}
+.submit-wrap a:hover{
+  color: #00B1E9;
+  text-decoration: underline;
+}
+input[type="checkbox"]{
+  margin-right: 3px;
+  vertical-align: 0.1em;
+}
+.submit-wrap label{
+  margin-bottom: 10px;
+}
+input[type="submit"] {
+  background: #00a1e9;
+  border: 1px solid #00a1e9;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+input[type="submit"]:hover{
+  background: #00B1E9;
+  cursor: pointer;
+}
+.withdraw-submit {
+  text-align: center;
+}
+.withdraw-submit input[type="submit"] {
+  background: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 10px 30px;
+  border-radius: 3px;
+  margin: 10px auto 0;
+}
+.withdraw-submit input[type="submit"]:hover {
+  background: #ff3030;
+  border: 1px solid #ff3030;
+  cursor: pointer;
+}
+
+/*========================================
+  エラー
+========================================*/
+label.err input{
+  background: #ffb7b7;
+}
+.area-msg{
+  font-size: 14px;
+  color: #ff0033;
+}
+.common {
+  text-align: center;
+}
+
+/*========================================
+  フッター
+========================================*/
+footer{
+  width: 100%;
+  padding: 10px;
+  background: #000000;
+  color: #f1f1f1;
+  border-top: 2px solid #3f3f3f;
+  text-align: center;
+}
