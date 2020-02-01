@@ -79,10 +79,6 @@
                         </div>  
                       </div>
                       <p class="panel-comment"><?php echo sanitize($val['comment']); ?></p>
-                      <div class="text-wrap">
-                        <a href="reviewEdit.php?r_id=<?php echo $val['id'] ?>" class="text-review">編集</span>
-                        <a href="" id="js-" class="text-review delete">削除</a>
-                      </div>
                     </div>
                 </div>
               <?php endforeach; ?>
@@ -92,10 +88,11 @@
             <div id="clip" class="tab-pane">
               <div class="panel-wrap">
                 <?php foreach($likeData as $key => $val): ?>
-                  <div class="panel">
+                  <div class="panel panel-mypage-like">
                     <a href="movie.php?m_id=<?php echo $val['id']; ?>">
                       <img class="panel-img" src="<?php echo sanitize($val['image']); ?>">
                       
+                      <!--
                       <div class="panel-body-wrap">
                         <div class="panel-body">
                           <i class="fas fa-star"></i>
@@ -110,6 +107,7 @@
                           <span class="score"></span>
                         </div>
                       </div>
+                      -->
                       
                       <p><?php echo sanitize($val['title']); ?></p>
                     </a>

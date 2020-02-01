@@ -100,6 +100,12 @@
       <div class="site-width">
 
         <form method="post" class="form">
+          <div class="testuser">
+            <p style="text-align:center;">テストユーザー</p>
+            <p>メールアドレス：aaa@yahoo.co.jp</p>
+            <p>パスワード：aaaaaa</p>
+          </div>
+
           <div class="area-msg common">
             <?php if(!empty($err_msg['common'])) echo $err_msg['common']; ?>
           </div>

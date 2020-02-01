@@ -184,7 +184,7 @@
   }
 
   //DB接続
-  /*function dbConnect(){
+  function dbConnect(){
     //DBへの接続準備
     $dsn = 'mysql:dbname=LatestMovies;host=localhost;charset=utf8mb4';
     $user = 'root';
@@ -197,8 +197,8 @@
     //PDOオブジェクトを生成（DBへ接続）
     $dbh = new PDO($dsn, $user, $password, $options);
     return $dbh;
-  }*/
-
+  }
+/*
   //本番環境
   function dbConnect(){
     $db = parse_url($_SERVER['CLEARDB_DATABASE_URL']);
@@ -214,6 +214,7 @@
     $dbh = new PDO($dsn,$user,$password,$options);
     return $dbh;
   }
+  */
 
   function queryPost($dbh, $sql, $data){
     //クエリー作成
