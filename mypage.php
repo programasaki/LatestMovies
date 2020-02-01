@@ -21,18 +21,6 @@
 
   //ログイン認証
   require('auth.php');
-
-  if(!empty($_GET['r_id'])){
-    try {
-      $dbh = dbConnect();
-      $sql = 'INSERT INTO bord (sale_user, buy_user, movie_id, create_date) VALUES (:s_uid, :b_uid, :m_id, :date)';
-      $data = array(':s_uid' => $viewData['user_id'], ':b_uid' => $_SESSION['user_id'], ':m_id' => $m_id, ':date' => date('Y-m-d H:i:s'));
-      $stmt = queryPost($dbh, $sql, $data);
-    } catch (Exception $e) {
-      error_log('エラー発生:' . $e->getMessage());
-      $err_msg['common'] = MSG07;
-    }
-  }
   debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 ?>
 
